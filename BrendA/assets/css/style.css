@@ -1,0 +1,14 @@
+.background-pix{
+    background-image: url("../images/beautiful-scenery-road-forest-with-lot-colorful-autumn-trees_181624-30942.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*width: 200px;*/
+    height: 100vh;
+
+}
+
+
+
+footer {
+    background-color: blueviolet;
+}
