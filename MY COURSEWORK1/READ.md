@@ -1,0 +1,1 @@
+Here are some part of my CourseWork. Still working on a few adjustments! So more commits still to come!
