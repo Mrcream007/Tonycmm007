@@ -31,45 +31,27 @@ if (isset($_SESSION['brend_id'])) {
 
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <link rel="stylesheet" href="/assets/css/unsemantic-grid-responsive-tablet.css">
+  <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
 
 </head>
 <body>
 <div class="fixed-top">
-<?php
 
-        if(isset($brend)):
-?>
-        
-        
-
-<?php
-
-else:
-?>
-        <div style="background-color: white; padding-bottom: 20px;">
-        <p><a href="login.php">Log in</a> or <a href="signup.html">Sign up</a></p>
-        </div>
-        
-
-<?php endif; ?>
 
 
 
         
             <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-            
-            <div>
-                <select name="story" id="story">
-                    <option value="car">cars</option>
-                    <option value="city">city</option>
-                    <option value="tourist">tourist</option>
-                </select>
-            </div>
+
+           <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 80px; margin-right: 200px;">logo</h5>
+                 
 
             <ul class="navbar-nav">
                 <li class="nav-item">
                 <a class="nav-link" href="homepage1.php">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="homepage.php">Homefake</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="about1.php">about</a>

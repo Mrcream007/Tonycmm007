@@ -18,3 +18,10 @@
 footer {
     background-color: blueviolet;
 }
+
+.logo h5 {
+    text-indent: -99999999px;
+    background: url('girl.jpg');
+    width: 940px;
+    height: 140px;
+}
