@@ -22,84 +22,81 @@ if (isset($_SESSION['brend_id'])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!--START OF TEST LINK-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
-    <!--END OF TEST LINK-->
-
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <link rel="stylesheet" href="/assets/css/unsemantic-grid-responsive-tablet.css">
+    <title>Contact Us Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
 
 </head>
 <body>
 
-    <div class="fixed-top">
+<div class="fixed-top">
+        <div class="p-5 bg-primary text-white text-center">
+        <h1>PARADISIO</h1>
+        <p>We bring your dream destination to you!</p> 
+        </div>
 
-                    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="homepage1.php">Home</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="about1.php">about</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="searchstories.php">View Stories</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="poststory.php">Post story</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="galleries.php">Galleries</a>
+                    </li>
+                    <li class="nav-item" style="border: 2px solid blue; border-radius: 12px; padding: 0px; height: 40px;">
+                    <a class="nav-link" href="login.php">Login</a>
+                    </li>
+                    <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
+                    <a class="nav-link" href="logout.php">Logout</a>
+                    </li>
+                    </li>
+                    
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="logout.php">Log out</a>
+                    </li>-->
+                    <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
+                    <a class="nav-link" href="signup.php">Sign up</a>
+                    </li>
+                    <li>
+                                <?php
 
-                    <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 50px; margin-right: 200px;">logo</h5>
-                        
+                                    if(isset($brend)):
+                                    ?>
+                                    <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
+                                    <p style="color: white;">Hi <?=htmlspecialchars($brend["name"]) ?></p>
+                                        <?php endif; ?>
+                                    </div>
+                                </li>
+                    
+                    
+                    
+                
+            </ul>
+        </div>
+        </nav>
+    </div>
 
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link" href="homepage1.php">Home</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                        <a class="nav-link" href="about1.php">about</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="contact.php">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="searchstories.php">View Stories</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="poststory.php">Post story</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="galleries.php">Galleries</a>
-                        </li>
-                        <li class="nav-item" style="border: 2px solid blue; border-radius: 12px; padding: 0px; height: 40px;">
-                        <a class="nav-link" href="login.php">Login</a>
-                        </li>
-                        <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
-                        <a class="nav-link" href="logout.php">Logout</a>
-                        </li>
-                        </li>
-                        
-                        <!--<li class="nav-item">
-                            <a class="nav-link" href="logout.php">Log out</a>
-                        </li>-->
-                        <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
-                        <a class="nav-link" href="signup.php">Sign up</a>
-                        </li>
-                        <li>
-                                    <?php
-
-                                        if(isset($brend)):
-                                        ?>
-                                        <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
-                                        <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
-                                            <?php endif; ?>
-                                        </div>
-                                    </li>
-                        
-                        <br><br><br>
-                        
-                    </ul>
-                    </nav>
-
-    </div>  
+    <br><br><br><br><br><br><br> 
     <div class= "background-pix">
         <div class="container">
             <div class="row">    
@@ -128,9 +125,9 @@ if (isset($_SESSION['brend_id'])) {
         </div>
             <footer>
                         <div class="global">
-                <div class="curve"></div>
-                <div class="container">
-                    <div class="row">
+                            <div class="curve"></div>
+                            <div class="container">
+                                <div class="row">
                     <div class="col-md-6 col-md-3">
                         <h6>The Logo</h6>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
