@@ -16,12 +16,6 @@
 }
 
 footer {
-    background-color: blueviolet;
+    background-color: rgb(166, 157, 173);
 }
 
-.logo h5 {
-    text-indent: -99999999px;
-    background: url('girl.jpg');
-    width: 940px;
-    height: 140px;
-}

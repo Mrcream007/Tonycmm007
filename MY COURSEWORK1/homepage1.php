@@ -29,80 +29,79 @@ if (isset($_SESSION['brend_id'])) {
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!--START OF TEST LINK-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css'>
+    <!--END OF TEST LINK-->
+
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
+  <link rel="stylesheet" href="/assets/css/unsemantic-grid-responsive-tablet.css">
 
 </head>
 <body>
-<div class="fixed-top">
 
+    <div class="fixed-top">
 
+                    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
 
+                    <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 50px; margin-right: 200px;">logo</h5>
+                        
 
-        
-            <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="homepage1.php">Home</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                        <a class="nav-link" href="about1.php">about</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="contact.php">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="searchstories.php">View Stories</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="poststory.php">Post story</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="galleries.php">Galleries</a>
+                        </li>
+                        <li class="nav-item" style="border: 2px solid blue; border-radius: 12px; padding: 0px; height: 40px;">
+                        <a class="nav-link" href="login.php">Login</a>
+                        </li>
+                        <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
+                        <a class="nav-link" href="logout.php">Logout</a>
+                        </li>
+                        </li>
+                        
+                        <!--<li class="nav-item">
+                            <a class="nav-link" href="logout.php">Log out</a>
+                        </li>-->
+                        <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
+                        <a class="nav-link" href="signup.php">Sign up</a>
+                        </li>
+                        <li>
+                                    <?php
 
-           <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 50px; margin-right: 200px;">logo</h5>
-                 
+                                        if(isset($brend)):
+                                        ?>
+                                        <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
+                                        <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
+                                            <?php endif; ?>
+                                        </div>
+                                    </li>
+                        
+                        <br><br><br>
+                        
+                    </ul>
+                    </nav>
 
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                <a class="nav-link" href="homepage1.php">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                <a class="nav-link" href="about1.php">about</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="contact.php">Contact</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="searchstories.php">View Stories</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="poststory.php">Post story</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="galleries.php">Galleries</a>
-                </li>
-                <li class="nav-item" style="border: 2px solid blue; border-radius: 12px; padding: 0px; height: 40px;">
-                <a class="nav-link" href="login.php">Login</a>
-                </li>
-                <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
-                <a class="nav-link" href="logout.php">Logout</a>
-                </li>
-                </li>
-                
-                <!--<li class="nav-item">
-                    <a class="nav-link" href="logout.php">Log out</a>
-                </li>-->
-                <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
-                <a class="nav-link" href="signup.php">Sign up</a>
-                </li>
-                <li>
-                <?php
-
-                    if(isset($brend)):
-                    ?>
-                    <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
-                    <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
-                        <?php endif; ?>
-                    </div>
-                </li>
-                
-                <br><br><br>
-                
-            </ul>
-            </nav>
-            
-        </div>
-        
-        
+    </div>  
     <div class= "background-pix">
-        
         <div class="container">
-        <br><br><br><br><br><br>
             <div class="row">    
                 <section style="background-color: white;" class="col-md-8">
                     <h2 style="text-align: center;">Northern Lake</h2>
@@ -127,32 +126,59 @@ if (isset($_SESSION['brend_id'])) {
             </div>
             </div>
         </div>
-        
-        <br><br><br><br><br>
             <footer>
-            
-                <div class="row">
-                
-                    <div class="col-md-4">
-                        <a href="about1.php"><h3>About</h3></a>
-                        <br>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum labore rerum, cumque praesentium incidunt quaerat? Nulla, eos quae non vero quibusdam officiis deleniti magni perspiciatis rerum cumque eaque neque expedita.</p>
+                        <div class="global">
+                <div class="curve"></div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-6 col-md-3">
+                        <h6>The Logo</h6>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
 
-                    <div class="col-md-4">
-                        <h3>Privacy</h3>
-                        <br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis maxime minus, optio possimus deleniti assumenda praesentium repudiandae recusandae unde dignissimos, soluta inventore ipsam corporis, voluptatem animi beatae mollitia error magnam.</p>
+                    <div class="col-sm-6 col-md-2">
+                        <h6>Services</h6>
+                        <ul>
+                            <li><a href="#">Email Marketing</a> </li>
+                            <li><a href="#">Campaigns</a> </li>
+                            <li><a href="#">Branding</a> </li>
+                            <li><a href="#">Offline</a> </li>
+                        </ul>
                     </div>
 
-                    <div class="col-md-4">
-                        <h3>Copyrights</h3>
-                        <br>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis totam consequuntur quasi voluptatem unde culpa illum, amet nam voluptatum doloremque cum ullam laudantium? Repudiandae voluptatem doloribus perspiciatis eaque amet.</p>
+                    <div class="col-sm-6 col-md-2">
+                        <h6>About</h6>
+                        <ul>
+                            <li><a href="about1.php">Our Story</a> </li>
+                            <li><a href="about1.php">Benefits</a> </li>
+                            <li><a href="about1.php">Team</a> </li>
+                            <li><a href="about1.php">Careers</a> </li>
+                        </ul>
                     </div>
 
+                    <div class="col-sm-6 col-md-2">
+                        <h6>Legal</h6>
+                        <ul>
+                            <li><a href="#">Terms & Conditions</a> </li>
+                            <li><a href="#">Privacy Policy</a> </li>
+                            <li><a href="#">Terms of use</a> </li>
+                        </ul>
+                    </div>
+
+                    <div class="social">
+                        <h6>Follow us</h6>
+                        <a href="#"><i class="fa fa-facebook"></i> </a>
+                        <a href="#"><i class="fa fa-twitter"></i> </a>
+                        <a href="#"><i class="fa fa-snapchat-ghost"></i> </a>
+                        <a href="#"><i class="fa fa-instagram"></i> </a>
+                        <a href="#"><i class="fa fa-google-plus"></i> </a>
+                    </div>
+
+                    </div>
+                    <p class="copyright"> &copy; Copyright All rights reserved. </p>
                 </div>
+                </div>
+
             </footer>
-    </div>
 </body>
 </html>
