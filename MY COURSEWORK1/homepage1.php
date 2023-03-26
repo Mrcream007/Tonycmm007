@@ -57,13 +57,13 @@ if (isset($_SESSION['brend_id'])) {
                 <a class="nav-link" href="about1.php">about</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="poststory.php">Post story</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="stories.php">Stories</a>
-                </li>
-                <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="searchstories.php">View Stories</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="poststory.php">Post story</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="galleries.php">Galleries</a>
