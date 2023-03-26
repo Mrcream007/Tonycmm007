@@ -4,10 +4,6 @@ include 'database.php';
 
 ?>
 
-<?php 
-    include "database.php";
-?>
-
 <!--///////////////////////////////////////////////-->
 
 <?php
@@ -130,11 +126,16 @@ else:
             
         </div>
 <!--///////////////////////////////////////////////-->
+
+<br><br><br><br>
 <body>
+    <div style="margin-left: 10px;";>
     <form action="search.php" method="post">
         <input type="text" name="search" placeholder="Search">
         <button type="submit" name="submit-search">Search</button>
     </form>
+    </div>
+    
 
     <!--<h1>Front pages</h1>-->
     <h2>All Stories:</h2>
