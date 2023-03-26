@@ -50,9 +50,7 @@ if (isset($_SESSION['brend_id'])) {
                 <li class="nav-item">
                 <a class="nav-link" href="homepage1.php">Home</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="homepage.php">Homefake</a>
-                </li>
+                
                 <li class="nav-item">
                 <a class="nav-link" href="about1.php">about</a>
                 </li>
@@ -75,9 +73,7 @@ if (isset($_SESSION['brend_id'])) {
                 <a class="nav-link" href="logout.php">Logout</a>
                 </li>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="searchstories.php">View Stories</a>
-                </li>
+                
                 <!--<li class="nav-item">
                     <a class="nav-link" href="logout.php">Log out</a>
                 </li>-->
