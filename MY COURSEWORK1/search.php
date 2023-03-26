@@ -135,7 +135,7 @@ if (isset($_SESSION['brend_id'])) {
     }
 ?>
 </div>
-        <div class="fixed-bottom">
+        
         <footer>
         <div class="mt-5 p-4 bg-dark text-white text-center">
                     <p>Footer</p>
@@ -150,6 +150,6 @@ if (isset($_SESSION['brend_id'])) {
                     </div>
 
                     </footer> 
-        </div>
+        
 </body>
 </html>
