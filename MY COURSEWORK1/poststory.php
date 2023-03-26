@@ -177,6 +177,8 @@ if (isset($_SESSION['brend_id'])) {
         }
     ?>
     
-    <a href="homepage1.php">Home</a>
+    <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2375.3022063693224!2d-2.291340125480204!3d53.4630589386481!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bae72e7e47f69%3A0x6c930e96df4455fe!2sOld%20Trafford!5e0!3m2!1sen!2suk!4v1679856079709!5m2!1sen!2suk" width="1100" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 </body>
 </html>

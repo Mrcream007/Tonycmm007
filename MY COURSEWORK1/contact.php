@@ -28,7 +28,7 @@ if (isset($_SESSION['brend_id'])) {
   <style>
   .fakeimg {
     height: 200px;
-    background: #aaa;
+    background-image: url("girl.jpg");
   }
   </style>
 
@@ -109,16 +109,16 @@ if (isset($_SESSION['brend_id'])) {
       <p>Lorem ipsum dolor sit ame.</p>
       <ul class="nav nav-pills flex-column">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
+          <a class="nav-link active" href="homepage1.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="searchstories.php">Read & Search Stories</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="poststory.php">Post images and description</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
+          <a class="nav-link disabled" href="contact.php">Get In touch</a>
         </li>
       </ul>
       <hr class="d-sm-none">
