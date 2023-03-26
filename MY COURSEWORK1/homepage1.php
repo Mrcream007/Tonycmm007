@@ -43,7 +43,7 @@ if (isset($_SESSION['brend_id'])) {
         
             <nav class="navbar navbar-expand-sm bg-light justify-content-center">
 
-           <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 80px; margin-right: 200px;">logo</h5>
+           <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 50px; margin-right: 200px;">logo</h5>
                  
 
             <ul class="navbar-nav">
@@ -66,10 +66,10 @@ if (isset($_SESSION['brend_id'])) {
                 <li class="nav-item">
                 <a class="nav-link" href="galleries.php">Galleries</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="border: 2px solid blue; border-radius: 12px; padding: 0px; height: 40px;">
                 <a class="nav-link" href="login.php">Login</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
                 <a class="nav-link" href="logout.php">Logout</a>
                 </li>
                 </li>
@@ -77,7 +77,7 @@ if (isset($_SESSION['brend_id'])) {
                 <!--<li class="nav-item">
                     <a class="nav-link" href="logout.php">Log out</a>
                 </li>-->
-                <li class="nav-item">
+                <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
                 <a class="nav-link" href="signup.php">Sign up</a>
                 </li>
                 <li>
@@ -85,7 +85,7 @@ if (isset($_SESSION['brend_id'])) {
 
                     if(isset($brend)):
                     ?>
-                    <div style=" padding-top: 9px;">
+                    <div style=" padding-top: 9px; margin-left:5px">
                     <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
                         <?php endif; ?>
                     </div>
