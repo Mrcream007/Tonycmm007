@@ -61,17 +61,13 @@
 <?php
     endif;
 ?>
-            <div>
-                <h1 style="text-align: center; background-color: black;"><a href="homepage.php">Site Name</a></h1>
-            </div>
+            
             <nav class="navbar navbar-expand-sm bg-light justify-content-center">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                <a class="nav-link" href="homepage.php">Home</a>
+                <a class="nav-link" href="homepage1.php">Home</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link" href="stories.php">Stories</a>
-                </li>
+                
                 <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
                 </li>
@@ -80,9 +76,6 @@
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="login.php">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Log out</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="signup.php">Sign up</a>

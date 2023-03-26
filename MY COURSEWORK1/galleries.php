@@ -93,14 +93,13 @@ if (isset($_SESSION['brend_id'])) {
             </ul>
         </div>
         </nav>
-            
+        
         </div>
-        <br><br><br><br>
-
+        <br><br><br><br><br><br><br><br><br>
         <section class="gallery-links">
             <div class="container">
-                <br><br>
-                <h2 style="text-align: center;">Gallery</h2>
+                
+                <h2 style="text-align: center;">Stories and Picture Uploads!</h2>
             <div class="row">
                 <!--<div class="col-md-3">
                     <a href="#">
@@ -153,11 +152,12 @@ if (isset($_SESSION['brend_id'])) {
                         while ($row = mysqli_fetch_assoc($result)) {
                             echo '
                             <div class="col-md-12">
-                            <a href="#">
+                            
                         <div style="width: 100%; height: 235px; background-size:cover; background-image: url(./assets/images/'.$row["imgFullNameGallery"].'); background-position: center; background-repeat:no-repeat;"></div>
                         <h3>'.$row["titleGallery"].'</h3>
                         <p>'.$row["descGallery"].'</p>
-                    </a>
+                    
+                    
                     </div>
                     ';
                         }
@@ -200,27 +200,20 @@ if (isset($_SESSION['brend_id'])) {
     
             <footer>
             
-                <div class="row">
-                
-                    <div class="col-md-4">
-                        <h3>About</h3>
-                        <br>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum labore rerum, cumque praesentium incidunt quaerat? Nulla, eos quae non vero quibusdam officiis deleniti magni perspiciatis rerum cumque eaque neque expedita.</p>
+            <footer>
+        <div class="mt-5 p-4 bg-dark text-white text-center">
+                    <p>Footer</p>
+                    <div class="social">
+                        <h6>Follow us</h6>
+                        <a href="#"><i class="fa fa-facebook"></i> </a>
+                        <a href="#"><i class="fa fa-twitter"></i> </a>
+                        <a href="#"><i class="fa fa-snapchat-ghost"></i> </a>
+                        <a href="#"><i class="fa fa-instagram"></i> </a>
+                        <a href="#"><i class="fa fa-google-plus"></i> </a>
+                        <p class="copyright"> &copy; Copyright All rights reserved. </p>
                     </div>
 
-                    <div class="col-md-4">
-                        <h3>Privacy</h3>
-                        <br>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis maxime minus, optio possimus deleniti assumenda praesentium repudiandae recusandae unde dignissimos, soluta inventore ipsam corporis, voluptatem animi beatae mollitia error magnam.</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h3>Copyrights</h3>
-                        <br>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis totam consequuntur quasi voluptatem unde culpa illum, amet nam voluptatum doloremque cum ullam laudantium? Repudiandae voluptatem doloribus perspiciatis eaque amet.</p>
-                    </div>
-
-                </div>
+                    </footer>  
             </footer>
 </body>
 </html>
