@@ -44,23 +44,6 @@ if (isset($_SESSION['brend_id'])) {
 </head>
 <body>
 <div class="fixed-top">
-<?php
-
-        if(isset($brend)):
-?>
-        
-        
-
-<?php
-
-else:
-?>
-        
-        
-
-<?php endif; ?>
-
-
 
         
             <nav class="navbar navbar-expand-sm bg-light justify-content-center">

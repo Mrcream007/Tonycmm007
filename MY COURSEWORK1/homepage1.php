@@ -85,7 +85,7 @@ if (isset($_SESSION['brend_id'])) {
 
                     if(isset($brend)):
                     ?>
-                    <div style=" padding-top: 9px; margin-left:5px">
+                    <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
                     <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
                         <?php endif; ?>
                     </div>

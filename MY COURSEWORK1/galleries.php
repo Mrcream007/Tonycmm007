@@ -37,54 +37,45 @@ if (isset($_SESSION['brend_id'])) {
 <body>
 
 <div class="fixed-top">
-<?php
 
-        if(isset($brend)):
-?>
-        
-        
-
-<?php
-
-else:
-?>
-        
-        
-
-<?php endif; ?>
         
             <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-            
+
+            <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 50px; margin-right: 200px;">logo</h5>
+                
 
             <ul class="navbar-nav">
                 <li class="nav-item">
                 <a class="nav-link" href="homepage1.php">Home</a>
                 </li>
+                
                 <li class="nav-item">
                 <a class="nav-link" href="about1.php">about</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="poststory.php">Post story</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="stories.php">Stories</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
+                <a class="nav-link" href="searchstories.php">View Stories</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="poststory.php">Post story</a>
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="galleries.php">Galleries</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" style="border: 2px solid blue; border-radius: 12px; padding: 0px; height: 40px;">
                 <a class="nav-link" href="login.php">Login</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 0px; margin-left: 2px; height: 40px;">
                 <a class="nav-link" href="logout.php">Logout</a>
                 </li>
+                </li>
+                
                 <!--<li class="nav-item">
                     <a class="nav-link" href="logout.php">Log out</a>
                 </li>-->
-                <li class="nav-item">
+                <li class="nav-item"style="border: 2px solid blue; border-radius: 12px; padding: 2px; margin-left: 2px; height: 40px;">
                 <a class="nav-link" href="signup.php">Sign up</a>
                 </li>
                 <li>
@@ -92,7 +83,7 @@ else:
 
                     if(isset($brend)):
                     ?>
-                    <div style=" padding-top: 9px;">
+                    <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
                     <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
                         <?php endif; ?>
                     </div>
