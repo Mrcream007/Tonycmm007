@@ -32,16 +32,23 @@ if (isset($_SESSION['brend_id'])) {
   <link rel="stylesheet" href="assets/css/style.css">
 
   <link rel="stylesheet" href="/assets/css/unsemantic-grid-responsive-tablet.css">
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  </style>
 
 </head>
 <body>
 <div class="fixed-top">
+        <div class="p-2 bg-primary text-white text-center">
+        <h1>PARADISIO</h1>
+        <p>We bring your dream destination to you!</p> 
+        </div>
 
-                <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-
-                <h5 class="logo" style="text-indent: -9999999px; background: url('girl.jpg'); width: 120px; height: 50px; margin-right: 200px;">logo</h5>
-                    
-
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+            <div class="container-fluid">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                     <a class="nav-link" href="homepage1.php">Home</a>
@@ -82,18 +89,17 @@ if (isset($_SESSION['brend_id'])) {
                                     if(isset($brend)):
                                     ?>
                                     <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
-                                    <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
+                                    <p style="color: white;">Hi <?=htmlspecialchars($brend["name"]) ?></p>
                                         <?php endif; ?>
                                     </div>
                                 </li>
-                    
-                    <br><br><br>
-                    
-                </ul>
-                </nav>
+            </ul>
+        </div>
+        </nav>
                             <br>
 </div>
         <div class= "background-pix">
+            <br><br><br>
             <div class="container">
                 <br><br>
             <div class="jumbotron">
@@ -135,57 +141,17 @@ if (isset($_SESSION['brend_id'])) {
         
         
             <footer>
-            <div class="global">
-      <div class="curve"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-3">
-            <h6>The Logo</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-
-          <div class="col-sm-6 col-md-2">
-              <h6>Services</h6>
-              <ul>
-                <li><a href="#">Email Marketing</a> </li>
-                <li><a href="#">Campaigns</a> </li>
-                <li><a href="#">Branding</a> </li>
-                <li><a href="#">Offline</a> </li>
-              </ul>
-          </div>
-
-          <div class="col-sm-6 col-md-2">
-              <h6>About</h6>
-              <ul>
-                <li><a href="about1.php">Our Story</a> </li>
-                <li><a href="about1.php">Benefits</a> </li>
-                <li><a href="about1.php">Team</a> </li>
-                <li><a href="about1.php">Careers</a> </li>
-              </ul>
-          </div>
-
-          <div class="col-sm-6 col-md-2">
-              <h6>Legal</h6>
-              <ul>
-                <li><a href="#">Terms & Conditions</a> </li>
-                <li><a href="#">Privacy Policy</a> </li>
-                <li><a href="#">Terms of use</a> </li>
-              </ul>
-          </div>
-
-          <div class="social">
-            <h6>Follow us</h6>
-            <a href="#"><i class="fa fa-facebook"></i> </a>
-            <a href="#"><i class="fa fa-twitter"></i> </a>
-            <a href="#"><i class="fa fa-snapchat-ghost"></i> </a>
-            <a href="#"><i class="fa fa-instagram"></i> </a>
-            <a href="#"><i class="fa fa-google-plus"></i> </a>
-          </div>
-
-        </div>
-        <p class="copyright"> &copy; Copyright All rights reserved. </p>
-      </div>
-    </div>
+            <div class="mt-5 p-4 bg-dark text-white text-center">
+                    <p>Footer</p>
+                    <div class="social">
+                        <h6>Follow us</h6>
+                        <a href="#"><i class="fa fa-facebook"></i> </a>
+                        <a href="#"><i class="fa fa-twitter"></i> </a>
+                        <a href="#"><i class="fa fa-snapchat-ghost"></i> </a>
+                        <a href="#"><i class="fa fa-instagram"></i> </a>
+                        <a href="#"><i class="fa fa-google-plus"></i> </a>
+                        <p class="copyright"> &copy; Copyright All rights reserved. </p>
+                    </div>
 
             </footer>
         </div>

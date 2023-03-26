@@ -36,7 +36,7 @@ if (isset($_SESSION['brend_id'])) {
 <body>
 
 <div class="fixed-top">
-        <div class="p-5 bg-primary text-white text-center">
+        <div class="p-2 bg-primary text-white text-center">
         <h1>PARADISIO</h1>
         <p>We bring your dream destination to you!</p> 
         </div>
