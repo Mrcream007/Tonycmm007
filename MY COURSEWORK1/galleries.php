@@ -132,7 +132,7 @@ if (isset($_SESSION['brend_id'])) {
                         <p>This is a paragraph</p>
                     </a>
                 </div>-->
-
+                
                 <div class="col-md-3" >
                     <!--[created after compliting the galleryscript.php] getting our data from our gallery table database-->
                     <?php
@@ -171,6 +171,7 @@ if (isset($_SESSION['brend_id'])) {
                  //    </a>';
                     ?>
                 </div>
+            </div>
             </div>
 
             <?php
