@@ -77,15 +77,15 @@ if (isset($_SESSION['brend_id'])) {
      <a class="nav-link" href="signup.php">Sign up</a>
      </li>
      <li>
-     <?php
+                <?php
 
-         if(isset($brend)):
-         ?>
-         <div style=" padding-top: 9px; margin-left:5px">
-         <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
-             <?php endif; ?>
-         </div>
-     </li>
+                    if(isset($brend)):
+                    ?>
+                    <div style=" padding-top: 9px; margin-left:5px; border-radius: 12px; padding: 0px; height: 40px; border: 2px solid orange;">
+                    <p>Hi <?=htmlspecialchars($brend["name"]) ?></p>
+                        <?php endif; ?>
+                    </div>
+                </li>
      
      <br><br><br>
      
