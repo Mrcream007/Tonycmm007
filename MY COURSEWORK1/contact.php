@@ -35,7 +35,7 @@
 
             <div class="col-md-12">
                 <label for="comments" class="form-label">Comments, Inquiry?</label>
-                <textarea class="form-control" name="comments" id="comments, questions" rows="3" required></textarea>
+                <textarea class="form-control" name="comments, questions" id="comments" rows="3" required></textarea>
             </div>
 
             <div class="col-md-12">
